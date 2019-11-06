@@ -37,7 +37,7 @@ h1 {
 
 h2, h3 {
   font-family: "Lato";
-  color: #2b546a;
+  color: #436272;
   font-weight: 300;
 }
 
@@ -48,18 +48,19 @@ h2 {
 
 h3 {
   font-size: 20px;
-  border-bottom: 1px solid #e1e6ec;
+  /* border-bottom: 1px solid #e1e6ec; */
   line-height: 64px;
   margin-bottom: 40px;
 }
 
 .header {
-  height: 45px;
-  border-bottom: 1px solid #eee;
+  height: 44px;
+  /* border-bottom: 1px solid #eee; */
+  background-color: #222;
 }
 
 .header-logo {
-  height: 45px;
+  height: 44px;
   width: 84px;
   background-color: #2b546a;
   display: flex;
@@ -76,7 +77,8 @@ h3 {
 }
 
 .main-wrapper {
-  background-color: #f4fafa;
+  background-color: #1c2931;
+  color: rgb(172, 173, 173);
 }
 
 .main {
@@ -123,14 +125,14 @@ h3 {
 
 .modal-inner {
   position: absolute;
-  top: 8%;
+  top: 12%;
   right: 0;
   left: 0;
   width: 480px;
   padding-bottom: 60px;
   margin: auto;
   background-color: rgb(255, 255, 255);
-  border-radius: 8px;
+  border-radius: 2px;
 }
 
 .modal-header {
@@ -138,7 +140,7 @@ h3 {
   width: 100%;
   margin-bottom: 60px;
   border-radius: 8px 8px 0 0;
-  background-image: url("https://s3-ap-northeast-1.amazonaws.com/progate/shared/images/lesson/react/modal_bar.svg");
+  /* background-image: url("https://s3-ap-northeast-1.amazonaws.com/progate/shared/images/lesson/react/modal_bar.svg"); */
 }
 
 .modal-introduction p {

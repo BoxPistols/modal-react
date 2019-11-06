@@ -5,24 +5,24 @@ class Main extends React.Component {
   render() {
     const lessonList = [
       {
-        name: 'HTML & CSS',
-        image: 'https://s3-ap-northeast-1.amazonaws.com/progate/shared/images/lesson/react/html.svg',
-        introduction: 'WEBページはHTML、CSSという言語によってその見た目が作られています。 実際にWEBページを作りながら学んでみましょう！',
+        name: 'Hello Item A',
+        image: 'https://picsum.photos/g/600/400?image=1000',
+        introduction: 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using Content here, content here',
       },
       {
-        name: 'Sass',
-        image: 'https://s3-ap-northeast-1.amazonaws.com/progate/shared/images/lesson/react/sass.svg',
-        introduction: 'SassはCSSをより便利に効率的にするための言語です。',
+        name: 'Hello Item B',
+        image: 'https://picsum.photos/g/600/400?image=1002',
+        introduction: 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using Content here, content here',
       },
       {
-        name: 'JavaScript',
-        image: 'https://s3-ap-northeast-1.amazonaws.com/progate/shared/images/lesson/react/es6.svg',
-        introduction: 'JavaScriptはフロントエンドだけでなく、サーバーサイドまで広い可能性を持つプログラミング言語です。',
+        name: 'Hello Item C',
+        image: 'https://picsum.photos/g/600/400?image=1003',
+        introduction: 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using Content here, content here',
       },
       {
-        name: 'React',
-        image: 'https://s3-ap-northeast-1.amazonaws.com/progate/shared/images/lesson/react/react.svg',
-        introduction: 'ReactはHTMLのように、サイトの見た目をつくることができるJavaScriptのライブラリです。',
+        name: 'Hello Item D',
+        image: 'https://picsum.photos/g/600/400?image=1004',
+        introduction: 'It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout. The point of using Lorem Ipsum is that it has a more-or-less normal distribution of letters, as opposed to using Content here, content here',
       },
     ];
 
@@ -30,11 +30,11 @@ class Main extends React.Component {
       <div className='main-wrapper'>
         <div className='main'>
           <div className='copy-container'>
-            <h1>Hello, World.</h1>
-            <h2>プログラミングの世界へようこそ！</h2>
+            <h1>Hello, React</h1>
+            <h2>lorem ipsum dolor sit amet</h2>
           </div>
           <div className='lesson-container'>
-            <h3>学べるレッスン</h3>
+            <h3>Items</h3>
             {lessonList.map((lessonItem) => {
               return (
                 <Lesson
