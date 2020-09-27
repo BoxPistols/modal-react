@@ -1,5 +1,4 @@
 import React from 'react';
-
 class Lesson extends React.Component {
   constructor(props) {
     super(props);
@@ -9,7 +8,7 @@ class Lesson extends React.Component {
   handleClickLesson() {
     this.setState({isModalOpen: true});
   }
-  
+
   // handleClickCloseメソッドを定義してください
   handleClickClose(){
     this.setState({isModalOpen: false});
@@ -26,7 +25,6 @@ class Lesson extends React.Component {
               <h2>{this.props.name}</h2>
               <p>{this.props.introduction}</p>
             </div>
-            {/* onClickイベントを追加してください */}
             <button
               className='modal-close-btn'
               onClick= {()=> {this.handleClickClose()}}

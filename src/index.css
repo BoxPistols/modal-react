@@ -5,6 +5,10 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  padding: 0;
+  font-family: "Avenir Next";
+  min-width: 1280px;
 }
 
 code {
@@ -12,16 +16,8 @@ code {
     monospace;
 }
 
-a{
+a {
   text-decoration: none;
-}
-
-
-body {
-  margin: 0;
-  padding: 0;
-  font-family: "Avenir Next";
-  min-width: 1280px;
 }
 
 ul {
@@ -49,52 +45,48 @@ h2 {
 h3 {
   font-size: 20px;
   /* border-bottom: 1px solid #e1e6ec; */
-  line-height: 64px;
+  line-height: 1.2;
   margin-bottom: 40px;
+  max-width: 800px;
 }
 
 .header {
-  height: 44px;
-  /* border-bottom: 1px solid #eee; */
-  background-color: #222;
+  background: #234;
+  height: 60px;
 }
 
-.header-logo {
-  height: 44px;
-  width: 84px;
-  background-color: #2b546a;
-  display: flex;
-  justify-content: center;
-  position: relative;
-}
-
-.header-logo img {
-  width: 36px;
-  padding-top: 0;
-  position: absolute;
-  left: 50%;
-  top: 5px;
+.header img {
+  height: 45px;
+  padding: 6px;
 }
 
 .main-wrapper {
   background-color: #1c2931;
   color: rgb(172, 173, 173);
+  height: 100vh;
+  min-height: 1000px;
 }
 
 .main {
-  max-width: 1040px;
+  max-width: calc((260px + 24px) * 4);
   margin: 0 auto;
-  padding: 96px 0;
+  padding: 26px 0;
 }
 
 .lesson-container {
-  margin-top: 96px;
+  margin-top: 2vh;
+}
+
+.org_cards {
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .lesson-card {
   display: inline-block;
-  width: 22.5%;
+  width: 260px;
   margin-right: 24px;
+  margin-bottom: 24px;
   text-align: center;
   box-shadow: 0 0 6px #e8e8e8;
   background-color: #fff;
@@ -103,11 +95,11 @@ h3 {
 
 .lesson-item {
   border-radius: 4px;
-  padding: 48px 0 64px;
+  padding: 48px 0 34px;
 }
 
 .lesson-item img {
-  width: 126px;
+  width: 186px;
 }
 
 .lesson-item p {
@@ -157,7 +149,7 @@ h3 {
   width: 200px;
   padding: 16px 0;
   border: 0;
-  background-color: #f0f4f9;
+  background-color: #a3b6ce;
   cursor: pointer;
 }
 
