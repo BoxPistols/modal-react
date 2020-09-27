@@ -1,11 +1,12 @@
 import React from 'react';
-class Lesson extends React.Component {
+import Style from './Modules/Modal.module.sass'
+class Modal extends React.Component {
   constructor(props) {
     super(props);
     this.state = {isModalOpen: false};
   }
 
-  handleClickLesson() {
+  handleClickModal() {
     this.setState({isModalOpen: true});
   }
 
@@ -18,29 +19,34 @@ class Lesson extends React.Component {
     let modal;
     if (this.state.isModalOpen) {
       modal = (
-        <div className='modal'>
-          <div className='modal-inner'>
-            <div className='modal-header'></div>
-            <div className='modal-introduction'>
+        <div className={Style.modal}>
+          <div className={Style.inner}>
+          <div className={Style.header}></div>
+            <div className={Style.introduction}>
               <h2>{this.props.name}</h2>
               <p>{this.props.introduction}</p>
             </div>
             <button
-              className='modal-close-btn'
+              className={Style.closeBtn}
               onClick= {()=> {this.handleClickClose()}}
             >
               Close
             </button>
+            <div
+              className={Style.closeIcon}
+              onClick= {()=> {this.handleClickClose()}}>
+              x
+            </div>
           </div>
         </div>
       );
     }
 
     return (
-      <div className='lesson-card'>
+      <div className='modal-card'>
         <div
-          className='lesson-item'
-          onClick={() => {this.handleClickLesson()}}
+          className='modal-item'
+          onClick={() => {this.handleClickModal()}}
         >
           <p>{this.props.name}</p>
           <img src={this.props.image} />
@@ -51,4 +57,4 @@ class Lesson extends React.Component {
   }
 }
 
-export default Lesson;
+export default Modal;

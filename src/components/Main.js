@@ -1,9 +1,9 @@
 import React from 'react';
-import Lesson from './Lesson';
+import Modal from './Modal';
 
 class Main extends React.Component {
   render() {
-    const lessonList = [
+    const ModalList = [
       {
         name: 'Hello Item A',
         image: 'https://picsum.photos/g/600/400?image=1000',
@@ -53,15 +53,15 @@ class Main extends React.Component {
             <h1>Hello, React</h1>
             <h2>lorem ipsum dolor sit amet</h2>
           </div>
-          <div className='lesson-container'>
+          <div className='modal-container'>
             <h3>Items Lorem ipsum dolor sit amet consectetur adipisicing elit Voluptatem dicta rerum illum in voluptas quam modi id ipsam</h3>
             <div className='org_cards'>
-              {lessonList.map((lessonItem) => {
+              {ModalList.map((modalItem) => {
                 return (
-                  <Lesson
-                    name={lessonItem.name}
-                    image={lessonItem.image}
-                    introduction={lessonItem.introduction}
+                  <Modal
+                    name={modalItem.name}
+                    image={modalItem.image}
+                    introduction={modalItem.introduction}
                   />
                 );
               })}
