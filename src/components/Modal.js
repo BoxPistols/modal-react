@@ -3,7 +3,9 @@ import Style from './Modules/Modal.module.sass'
 class Modal extends React.Component {
   constructor(props) {
     super(props);
-    this.state = {isModalOpen: false};
+    this.state = {
+      isModalOpen: false,
+    };
   }
 
   handleClickModal() {
@@ -26,11 +28,18 @@ class Modal extends React.Component {
               <h2>{this.props.name}</h2>
               <p>{this.props.introduction}</p>
             </div>
+
             <button
-              className={Style.closeBtn}
+              className={Style.close}
               onClick= {()=> {this.handleClickClose()}}
             >
               Close
+            </button>
+            <button
+              className={Style.success}
+              onClick= {()=> {this.handleClickClose()}}
+            >
+              Success
             </button>
             <div
               className={Style.closeIcon}
@@ -46,7 +55,11 @@ class Modal extends React.Component {
       <div className='modal-card'>
         <div
           className='modal-item'
-          onClick={() => {this.handleClickModal()}}
+          onClick={
+            () => {
+              this.handleClickModal()
+            }
+          }
         >
           <p>{this.props.name}</p>
           <img src={this.props.image} />

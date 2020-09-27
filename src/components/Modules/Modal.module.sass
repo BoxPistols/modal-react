@@ -1,14 +1,19 @@
 .modal
-  position: absolute
+  position: fixed
   top: 0
   right: 0
   bottom: 0
   left: 0
   background-color: rgba(0, 0, 0, 0.6)
   cursor: initial
-  padding: 5vw
+  padding: 2vw
+  /* css animation */
+  // animation-name: open
+  // animation-duration: .5s
+  // animation-timing-function: ease-in-out
 
 .inner
+  animation: open .4s linear 0s
   position: relative
   top: 12%
   right: 0
@@ -34,19 +39,25 @@
   text-align: left
   margin: 36px auto 40px
 
-.closeBtn
+
+.btn
   font-size: 13px
-  color: #8491a5
+  color: white
   width: 200px
   padding: 16px 0
   border: 0
-  background-color: #a3b6ce
   cursor: pointer
 
   &:hover
-    color: #8491a5
     background-color: #ccd9ea
     transition: 0.3s ease-in-out
+
+.close
+  @extend .btn
+  background-color: #a3b6ce
+.success
+  @extend .btn
+  background-color: #39a139
 
 .closeIcon
   position: absolute
@@ -54,8 +65,14 @@
   right: 12px
   font-size: 32px
   transform: scale(1.2, 1)
-  text-shadow: 2px 2px 3px #555
-  color: #444
 
   &:hover
     cursor: pointer
+
+@keyframes open
+  from
+    opacity: 0
+  75%
+    opacity: 0.5
+  to
+    opacity: 1
